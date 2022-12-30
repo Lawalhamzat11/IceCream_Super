@@ -1,4 +1,3 @@
-#!/bin/bash
 //header file for input and output function i.e printf, scanf e.t.c
 #include <stdio.h>
 
@@ -378,10 +377,7 @@ else if (flavour == 3 && size == 3)
 else
 {
     printf("\nInvalid input");
-
     Sleep(5000);
-
-
     main();
 }
 
