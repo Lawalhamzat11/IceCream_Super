@@ -16,7 +16,7 @@ void main()
 
 // Declaration of Ice cream flavours, sizes and prices i.e Menu
 int size, flavour, orders;
-float num_of_orders, customersCash, change, payment;
+float num_of_orders, customersCash, customersCash1, change, payment;
 
 //I made the prices of the flavours constant so i can use them later in the program
 //And to avoid having errors if prices change overtime
@@ -82,11 +82,12 @@ if (flavour == 1 && size == 1)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (chocoSmall * (float)orders);
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
 
     if (change >= 0)
     {
@@ -116,11 +117,12 @@ else if (flavour == 1 && size == 2)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (chocoMedium * (float)orders);
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
 
     if (change >= 0)
     {
@@ -152,12 +154,13 @@ else if (flavour == 1 && size == 3)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (chocoLarge * (float)orders);
-    
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
+
     if (change >= 0)
     {
         printf("\nYour Change: $%.2f", change);
@@ -186,11 +189,12 @@ else if (flavour == 2 && size == 1)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (vaniSmall * (float)orders);
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
     
     if (change >= 0)
     {
@@ -220,12 +224,13 @@ else if (flavour == 2 && size == 2)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (vaniMedium * (float)orders);
-    
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
+
     if (change >= 0)
     {
         printf("\nYour Change: $%.2f", change);
@@ -255,12 +260,13 @@ else if (flavour == 2 && size == 3)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (vaniLarge * (float)orders);
-    
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
+
     if (change >= 0)
     {
         printf("\nYour Change: $%.2f", change);
@@ -290,11 +296,12 @@ else if (flavour == 3 && size == 1)
     while (change < 0)
     {
     printf("\nInsufficient funds");
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
     printf("========================================");
-    change = customersCash - (redVelSmall * (float)orders);
+    change += customersCash1;
      
     if (change >= 0)
     {
@@ -323,11 +330,12 @@ else if (flavour == 3 && size == 2)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (redVelMedium * (float)orders);
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
 
     if (change >= 0)
     {
@@ -357,11 +365,12 @@ else if (flavour == 3 && size == 3)
     while (change < 0)
     {
     printf("\nInsufficient funds");
-     printf("\n========================================");
-    printf("\nYour Cash: $");
-    scanf("%f", &customersCash);
+    printf("\nBalance: %.2f", -(change));
     printf("\n========================================");
-    change = customersCash - (redVelLarge * (float)orders);
+    printf("\nPlease Enter Your Remaining Balance: $");
+    scanf("%f", &customersCash1);
+    printf("========================================");
+    change += customersCash1;
 
     if (change >= 0)
     {
