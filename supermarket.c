@@ -89,6 +89,7 @@ if (flavour == 1 && size == 1)
     printf("========================================");
     change += customersCash1;
 
+    //breaks out of the loop when change is positive or 0
     if (change >= 0)
     {
         printf("\nYour Change: $%.2f", change);
@@ -99,31 +100,45 @@ if (flavour == 1 && size == 1)
 
 }
 
+//if the user choose Chocolate flavor, Size: Medium
 else if (flavour == 1 && size == 2)
 {
     printf("\nFlavour\t\tSize\t Price");
     printf("\nChocolate\tMedium\t $%.2f", chocoMedium);
+
+    //Prompt customer how many orders they want
     printf("\nHOW MANY ORDERS: ");
+
+    //scans consumer input
     scanf("%d", &orders);
+
+    //Payment Display and Receipt Display
     printf("================Payment================");
     printf("\nTotal Payment\t\t\t $%.2f", chocoMedium * (float)orders);
     printf("\n========================================");
+
+    //prompt customer for Money
     printf("\nYour Cash: $");
+
+    //scans consumer input
     scanf("%f", &customersCash);
     printf("\n========================================");
     change = customersCash - (chocoMedium * (float)orders);
     
-
+    //keeps prompting the user till change is positive
     while (change < 0)
     {
     printf("\nInsufficient funds");
-    printf("\nBalance: %.2f", -(change));
+    printf("\nBalance: %.2f", -(change));  //print balance as a positive number
     printf("\n========================================");
+    
+    //prompt user for the remaining balance
     printf("\nPlease Enter Your Remaining Balance: $");
     scanf("%f", &customersCash1);
     printf("========================================");
-    change += customersCash1;
+    change += customersCash1;  //expression for the final change
 
+    //breaks out of the loop when change is positive or 0
     if (change >= 0)
     {
         printf("\nYour Change: $%.2f", change);
@@ -132,35 +147,47 @@ else if (flavour == 1 && size == 2)
 
     }
     
- 
 }
 
-
+//if the user choose Chocolate flavor, Size: Large
 else if (flavour == 1 && size == 3)
 {
     printf("\nFlavour\t\tSize\t Price");
     printf("\nChocolate\tLarge\t $%.2f", chocoLarge);
-    printf("\nHOW MANY ORDERS: ");
+    
+    //Prompt customer how many orders they want
+    printf("\nHOW MANY ORDERS: "); 
+    
+    //scans the number of orders from the customer
     scanf("%d", &orders);
+    
+    //Payment Display and Receipt Display
     printf("================Payment================");
     printf("\nTotal Payment\t\t\t $%.2f", chocoLarge * (float)orders);
     printf("\n========================================");
+
+    //prompt customer for Money
     printf("\nYour Cash: $");
+
+    //scans consumer input
     scanf("%f", &customersCash);
     printf("\n========================================");
     change = customersCash - (chocoLarge * (float)orders);
 
-
+    //keeps prompting the user till change is positive
     while (change < 0)
     {
     printf("\nInsufficient funds");
-    printf("\nBalance: %.2f", -(change));
+    printf("\nBalance: %.2f", -(change)); //print balance as a positive number
     printf("\n========================================");
+    
+    //prompt user for the remaining balance
     printf("\nPlease Enter Your Remaining Balance: $");
     scanf("%f", &customersCash1);
     printf("========================================");
-    change += customersCash1;
-
+    change += customersCash1; //expression for change
+    
+    //breaks out of the loop when change is positive or 0
     if (change >= 0)
     {
         printf("\nYour Change: $%.2f", change);
